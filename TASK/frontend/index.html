@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga-form</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    #form{  /* input fields form */
+        width: 25%;
+        margin: auto;
+        margin-top: 80px;
+        padding: 30px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 15px;
+        
+        /* border: 1px solid red; */
+    }
+  input{
+      display: block;
+      width: 100%;
+      /* height: 20px; */
+      margin-top: 6px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+  }
+  select{
+      display: block;
+      margin-top: 6px;
+      margin-bottom: 16px;
+  }
+  #sold{
+      display: inline;
+      margin-left: 20px;
+  }
+  label{
+      font-weight:500;
+      font-size: 20px;
+  }
+
+  @media all and (min-width : 320px) and (max-width : 768px){
+      #form{
+          width: 40%;
+      }
+      input{
+          width: 100%;
+      }
+  }
+  </style>
+<body>
+    <h1>Admission from</h1>
+
+    <form id="form">
+        <h2 style="margin-bottom: 10px; color: red;"><u>The Fitness World</u></h2>
+        <input id="name" type="text" placeholder="Enter your Name">
+        
+        <input id="age" type="text" placeholder="Enter your age">
+
+        <select id="batch">
+            <option value="">Batch</option>
+            <option value="Clothes">6:00 to 7:00 A.M</option>
+            <option value="Electronic">7:00 to 8:00 A.M</option>
+            <option value="Stationary">8:00 to 9:00 A.M</option>
+            <option value="Stationary">5:00 to 6:00 P.M</option>
+        </select>
+
+        <input id="mobile" type="text" placeholder="Enter your Mobile No.">
+
+        <input id="address" type="text" placeholder="Enter your address">
+
+        <select id="gender">
+            <option value="">Gender</option>
+            <option value="Male">M</option>
+            <option value="Female">F</option>
+        </select>
+
+        <label>Fee Paid: </label>
+        <select id="sold">
+            <option value="false" selected>False</option>
+            <option value="true">True</option>
+        </select>
+
+        <input id="add" type="submit" value="Submit">
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
