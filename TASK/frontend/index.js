@@ -9,7 +9,7 @@ form.addEventListener("submit", function(e){
     const gender = document.getElementById("gender").value;
     console.log({name, age, batch, mobile, address, gender});
 
-    fetch('http://localhost:8080/yoga', {
+    fetch('mongodb+srv://vmr:vmr@cluster0.64xzncc.mongodb.net/yoga', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
