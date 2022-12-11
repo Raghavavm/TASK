@@ -18,7 +18,7 @@ app.get("/", (req,res)=> {
     return res.send("all ok");
 })
 
-mongoose.connect("mongodb://localhost:27017/raghav").then(()=>{
+mongoose.connect("mongodb+srv://vmr:vmr@cluster0.64xzncc.mongodb.net/yoga").then(()=>{
     app.listen(8080, ()=> {
         console.log("listening at http://localhost:8080");
     })
